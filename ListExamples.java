@@ -3,6 +3,13 @@ import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
+class StringCheckerClass implements StringChecker{
+  boolean checkString(String s){
+    if (s.length() > 3){return true;}
+    else{return false;}
+  }
+}
+
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
